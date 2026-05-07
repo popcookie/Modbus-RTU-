@@ -1,0 +1,45 @@
+{
+    "serial": {
+        "port": null,
+        "baudrate": 9600,
+        "bytesize": 8,
+        "parity": "N",
+        "stopbits": 1
+    },
+    "scan_enabled": true,
+    "interval_seconds": 1,
+    "devices": [
+        {
+            "slave_id": 1,
+            "type": "flow",
+            "register": 0,
+            "name": "氧气流量计",
+            "high_limit": 100.0,
+            "low_limit": 0.0
+        },
+        {
+            "slave_id": 2,
+            "type": "flow",
+            "register": 0,
+            "name": "氮气流量计",
+            "high_limit": 80.0,
+            "low_limit": 0.0
+        },
+        {
+            "slave_id": 3,
+            "type": "temp",
+            "register": 1,
+            "name": "反应釜温度",
+            "high_limit": 85.0,
+            "low_limit": 10.0
+        },
+        {
+            "slave_id": 4,
+            "type": "pressure",
+            "register": 2,
+            "name": "罐体压力",
+            "high_limit": 1.2,
+            "low_limit": 0.1
+        }
+    ]
+}
